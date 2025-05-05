@@ -1,0 +1,89 @@
+body{
+    background-color: beige;
+}
+
+h1{
+    
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    /*les tailles de police doivent etre en rem */
+   font-size: 2.5rem;
+   color: rgb(55, 131, 179);
+   text-decoration: underline;
+   font-family: sans-serif
+}
+
+main {
+    min-height: 500px; 
+    width: 90%;
+    background-color: rgba(107, 168, 176, 0.589);
+   /* centrer une boite: utiliser margin 0 auto*/
+    margin: 0 auto;
+    padding: 15px;
+    border: 2px solid rgb(76, 73, 216);
+    border-radius: 20px 20px 0 0 ;
+    box-shadow: inset 3px 5px 20px 2px #9096c652; ;
+}
+
+h3{
+    margin:0;
+}
+
+/*GRID : */
+.grid-container{
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    justify-items: center;
+}
+
+.fautif{
+    background-color: lightgrey;
+    border: 1px solid black; 
+    border-radius: 2%;
+    padding: 8px;
+   text-align: justify ;
+   justify-content: space-around ;
+}
+
+.graphique{
+    border-radius: 3%;
+    justify-content: center;
+}
+
+.grid-solution{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.solution{
+    background-color: lightgrey;
+    border: 1px solid black; 
+    border-radius: 2%;
+    padding: 8px;
+   text-align: justify ;
+   justify-content: space-around
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width:900px){
+    .grid-container{
+        display: block;
+     }
+     .grid-container{
+        width:40% ;
+     }   
+}
+@media screen and (max-width:610px)
+   .flexbox ul{
+    flex-direction: column;
+    align-items: center;
+   }
+
+footer{
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    flex-direction: column;
+}
