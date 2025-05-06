@@ -1,5 +1,8 @@
+
 body{
     background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
 }
 
 h1{
@@ -8,8 +11,8 @@ h1{
     letter-spacing: 3px;
     text-align: center;
     /*les tailles de police doivent etre en rem */
-   font-size: 2.5rem;
-   color: rgb(55, 131, 179);
+   font-size: 1.5rem;
+   color: rgba(55, 131, 179, 0.729);
    text-decoration: underline;
    font-family: sans-serif
 }
@@ -65,6 +68,9 @@ h3{
    text-align: justify ;
    justify-content: space-around
 }
+h5 {
+text-align: center;
+}
 
 /*RESPONSIVE*/
 @media screen and (max-width:900px){
@@ -75,11 +81,7 @@ h3{
         width:40% ;
      }   
 }
-@media screen and (max-width:610px)
-   .flexbox ul{
-    flex-direction: column;
-    align-items: center;
-   }
+
 
 footer{
     padding: 10px;
